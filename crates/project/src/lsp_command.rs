@@ -2213,7 +2213,6 @@ impl LspCommand for GetCompletions {
                 }
                 CoreCompletion {
                     replace_range: edit.replace_range,
-                    insert_range: edit.insert_range.clone(),
                     new_text: edit.new_text,
                     source: CompletionSource::Lsp {
                         insert_range: edit.insert_range,
